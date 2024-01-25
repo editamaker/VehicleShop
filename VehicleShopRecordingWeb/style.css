@@ -1,0 +1,280 @@
+/* Setting the font family for the entire document to 'Poppins' for a consistent look */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #3679da;
+    scroll-behavior: smooth;
+    /* Smooth scrolling when interacting with links in the navbar */
+}
+
+/* Styling for the header section */
+header {
+    background-color: #3679da;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Styling for header's h1 element */
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Styling for header's p element */
+header p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+/* Styling for the navigation bar */
+nav {
+    background-color: #3679da;
+    padding: 0.5em 0;
+    text-align: center;
+}
+
+/* Styling for navigation bar links */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s;
+    /* Smooth color transition on hover */
+}
+
+/* Styling for navigation bar links on hover */
+nav a:hover {
+    color: #ffd700;
+    /* Change to your preferred color on hover */
+}
+
+/* Styling for the select element in the navigation bar (visible on small screens) */
+nav select {
+    display: none;
+}
+
+/* Styling for the first wrapper section */
+.first-wrapper {
+    position: relative;
+    height: 80vh;
+    font-weight: 700;
+    display: grid;
+    place-items: center;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.first-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(54, 121, 218, 0.5), rgba(54, 121, 218, 0.5)),
+                url('photos/pexels-erik-mclean-4674347.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+/* Media query for screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+
+    /* Hide navigation bar links on small screens */
+    nav a {
+        display: none;
+    }
+
+    /* Display the select element on small screens */
+    nav select {
+        display: block;
+        margin: 10px;
+    }
+}
+
+/* Styling for section elements */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Styling for h2 elements */
+h2 {
+    color: #3679da;
+    margin-bottom: 20px;
+}
+
+/* Styling for the gallery section */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Styling for gallery images */
+.gallery img {
+    max-width: 400px !important;
+    height: auto;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin: 15px;
+    transition: transform 0.2s;
+    /* Smooth scaling effect on hover */
+}
+
+/* Styling for gallery images on hover */
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Styling for the 'about-us' section */
+#about-us {
+    background-color: #f8f9fa;
+}
+
+/* Styling for 'about-us' div */
+#about-us div {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    /* Setting text in the center */
+}
+
+/* Styling for 'about-us' h2 */
+#about-us h2 {
+    color: #3679da;
+}
+
+/* Styling for 'about-us' p */
+#about-us p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Styling for the video container */
+.video-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 20px 0;
+}
+
+/* Styling for video container iframes */
+.video-container iframe {
+    width: 100%;
+    height: 315px;
+    /* Adjust as needed */
+}
+
+/* Styling for the form element */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Styling for label elements */
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #3679da;
+}
+
+/* Styling for input and textarea elements */
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Styling for button elements */
+button {
+    background-color: #3679da;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Styling for button elements on hover */
+button:hover {
+    background-color: #555;
+}
+
+/* Styling for the footer section */
+footer {
+    background-color: #3679da;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Styling for input elements inside the contact form */
+.contact-from  input {
+    display: block;
+}
+
+/* Styling for the contact form, using a grid layout */
+/* .contact-from {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+} */
+
+/* Styling for the form element */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Styling for label elements */
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #3679da;
+}
+
+/* Styling for input and textarea elements */
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Styling for button elements */
+button {
+    background-color: #3679da;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Styling for button elements on hover */
+button:hover {
+    background-color: #555;
+}
+
+/* Styling for the footer section */
+footer {
+    background-color: #3679da;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}

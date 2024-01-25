@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MakerMinds Vehicle Web</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="nonexistent-favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- The top header -->
+    <header>
+      <h1>MakerMinds Vehicle</h1>
+      <p>Explore the Latest Models</p>
+    </header>
+    <!-- Navigation bar  -->
+    <nav>
+      <a href="#">Home</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about-us">About Us</a>
+      <a href="#video-container">Video Showcase</a>
+      <a href="#contact-form">Contact Us</a>
+      <!-- Dropdown menu for small screens -->
+      <select onchange="window.location.href=this.value">
+        <option value="#" selected>Home</option>
+        <option value="#gallery">Gallery</option>
+        <option value="#about-us">About Us</option>
+        <option value="#video-container">Video Showcase</option>
+        <option value="#contact-form">Contact Us</option>
+      </select>
+    </nav>
+    <!-- The section with backgroudn as an image -->
+    <section class="first-wrapper">Step Into Our Virtual Showroom</section>
+    <!-- Photos Gallery here -->
+    <section>
+      <h2>Photo Gallery</h2>
+      <div class="gallery" id="gallery">
+        <img src="photos/pexels-mike-bird-1335077.jpg" alt="Car 1" />
+        <img src="photos/pexels-pixabay-210019.jpg" alt="Car 2" />
+        <img src="photos/pexels-pixabay-358070.jpg" alt="Car 3" />
+      </div>
+    </section>
+    <!-- About us the part of the text -->
+    <section id="about-us">
+      <div>
+        <h2>About Us</h2>
+        <p>Discover the passion behind our website.</p>
+        <p>
+          At MakerMinds Vehicle, we are dedicated to providing you with the
+          finest selection of quality vehicles. Our team of experts is
+          passionate about cars and committed to ensuring your satisfaction.
+          With years of experience in the automotive industry, we strive to
+          exceed your expectations every time you step into our showroom.
+        </p>
+      </div>
+    </section>
+    <!-- iFrame with youtube video -->
+    <section>
+      <h2>Video Showcase</h2>
+      <div class="video-container" id="video-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/8b8YXwPuS_s"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+    <!-- Contact us form -->
+    <section>
+      <h2>Contact Us</h2>
+
+      <form id="contact-form" class="contact-from" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+      <div id="message-container"></div>
+    </section>
+    <!-- footer part here -->
+    <footer>
+      <p>&copy; 2023 MakerMinds. All rights reserved.</p>
+    </footer>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+  <script src="ajax.js"></script>
+  <script src="submit-form.js"></script>
+</html>
